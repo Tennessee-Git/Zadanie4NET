@@ -1,0 +1,10 @@
+﻿@page
+@using ContosoCrafts.WebSite.Components
+@model ContosoCrafts.WebSite.Pages.FromFileModel
+@{
+    ViewData["Title"] = "From File";
+}
+
+@(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
+
+<script src="_framework/blazor.server.js"></script>
