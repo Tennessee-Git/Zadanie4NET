@@ -19,6 +19,7 @@ namespace ContosoCrafts.WebSite.Pages
         {
             _logger = logger;
             _context = context;
+            ProductsList = _context.Products.ToList();
         }
 
         public void OnGet()

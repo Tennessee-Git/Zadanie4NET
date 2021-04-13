@@ -3,3 +3,19 @@
 @{
     ViewData["Title"] = "From Database";
 }
+<div class="card-columns">
+    @foreach (var item in Model.ProductsList)
+    {
+    <div class="card">
+        <div class="card-img" style="background-image: url(@item.Image);"></div>
+        <div class="card-body">
+            <h5 class="card-title">@item.Title</h5>
+        </div>
+        <div class="card-footer">
+            <small class="test-muted">
+                <button>More Info</button>
+            </small>
+        </div>
+    </div>
+    }
+</div>
